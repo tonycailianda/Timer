@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="52dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/start_button"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="97dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="139dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="32dp"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pause_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tens_digit"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="134dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="68dp"
+        android:text="Pause"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/unit_digit" />
+
+    <ImageView
+        android:id="@+id/tens_digit"
+        android:layout_width="113dp"
+        android:layout_height="102dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginLeft="73dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="159dp"
+        app:layout_constraintBottom_toTopOf="@+id/timer_text"
+        app:layout_constraintEnd_toStartOf="@+id/unit_digit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/unit_digit"
+        android:layout_width="105dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="250dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="63dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="161dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tens_digit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</android.support.constraint.ConstraintLayout>
